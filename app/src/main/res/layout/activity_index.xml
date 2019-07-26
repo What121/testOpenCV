@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".IndexActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:text="选择图片" />
+
+            <Button
+                android:id="@+id/choose_image"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="打开"/>
+
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:id="@+id/startimg_w"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="w:"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:id="@+id/startimg_h"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="h:"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/image_start"
+            android:layout_width="500dp"
+            android:layout_height="500dp" />
+
+        <Button
+            android:id="@+id/cl_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="开始处理"/>
+
+    </LinearLayout>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="处理结果"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:paddingTop="20dp"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <TextView
+                android:paddingTop="10dp"
+                android:id="@+id/resultimg_w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="w:"
+                android:textSize="20sp"
+                />
+
+            <TextView
+                android:paddingTop="10dp"
+                android:id="@+id/resultimg_h"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="h:"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_result"
+            android:layout_width="500dp"
+            android:layout_height="500dp" />
+
+        <Button
+            android:id="@+id/decode_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="二维码处理"/>
+        
+        <TextView
+            android:id="@+id/result_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

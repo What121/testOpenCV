@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/choose_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:text="选择图片" />
+
+            <TextView
+                android:id="@+id/gray_img"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="灰度处理"/>
+
+            <TextView
+                android:id="@+id/gslb_image"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="高斯滤波处理"/>
+
+            <TextView
+                android:id="@+id/tdh_image"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="梯度sobel处理"/>
+
+            <TextView
+                android:id="@+id/gzlb_image"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="均值滤波处理"/>
+
+            <TextView
+                android:id="@+id/ezhcl_image"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="二值化"/>
+
+            <TextView
+                android:id="@+id/bcl_image"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="填充条形码间隙"/>
+
+            <TextView
+            android:id="@+id/fscl_image"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:text="腐蚀处理"/>
+
+            <TextView
+                android:id="@+id/pzcl_image"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="膨胀处理"/>
+
+            <TextView
+                android:id="@+id/bjcl_image"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="边界定位处理"/>
+
+            <TextView
+                android:id="@+id/jqcl_image"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="截取处理"/>
+
+            <TextView
+                android:id="@+id/jzcl_image"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="校正处理"/>
+
+            <TextView
+                android:id="@+id/decodeqrcl_image"
+                android:paddingTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:text="识别处理"/>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/image_start"
+            android:layout_width="500dp"
+            android:layout_height="500dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="处理结果"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:id="@+id/image_result"
+            android:layout_width="500dp"
+            android:layout_height="500dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
